@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../apis/smart.default.css">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
@@ -107,6 +108,9 @@
                                 </p>
                                 <span><strong></strong> active</span>
                             </div>
+                            <div>
+                                <smart-calendar id="calander"></smart-calendar>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,5 +120,16 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../apis/smart.calendar.js"></script>
+    <script>
+        window.onload = function () {
+            Smart('#calendar', class {
+			get properties() {
+				return {"selectedDates":["2020-7-2","2020-7-17"]}
+			}
+		});
+        document.querySelector('smart-calendar').selectedDates = ["2018-1-1", new Date(2018,0,2)];
+     }
+    </script>
 </body>
 </html>

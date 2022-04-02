@@ -142,6 +142,7 @@
     border-collapse: collapse;
     border-radius: 8px;
     /* overflow: hidden; */
+    margin-bottom: 10px;
 }
 .style-table thead{
     background-color: #5c5388;
@@ -199,14 +200,69 @@
 .style-form-control::placeholder{
     color: black;
 }
-/* .flex-around{
+.flex-around{
     display: flex;
     justify-content: space-around;
-} */
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .filter{
     padding: 10px;
     background-color: transparent;
     border: 4px solid #242038;
     border-radius: 8px;
     margin-right: 5px;
+}
+.table-image{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+
+}
+.table-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--var-links-color);
+}
+.table-link:hover{
+    color: var(--var-success-color);
+}
+.paginator{
+    display: flex;
+    list-style-type: none;
+}
+.paginator li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #242038;
+    border-right: none;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.paginator li:last-child a{
+    border-right: 1px solid #242038;
+}
+.paginator li a:hover{
+    background-color: var(--var-links-color);
+    color: white;
 }
