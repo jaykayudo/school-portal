@@ -4,5 +4,5 @@ window.onload = function () {
         return {"selectedDates":[new Date(),"2022-7-17"]}
     }
 });
-// document.querySelector('smart-calendar').selectedDates = ["2018-1-1", new Date(2018,0,2)];
+// document.querySelector('smart-calendar').view = 'landscape';
 }

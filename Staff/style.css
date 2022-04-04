@@ -187,6 +187,11 @@
     /* overflow: hidden; */
     margin-bottom: 10px;
 }
+.style-table caption{
+    padding: 10px 0;
+    text-align: right;
+    color: #5c5388;
+}
 .style-table thead{
     background-color: #5c5388;
     color: white;
@@ -331,6 +336,12 @@
 .color-success{
     color: var(--var-success-color);
 }
+.color-gray{
+    color: rgb(160, 158, 158);
+}
+.color-primary{
+    color: rgb(52, 121, 248);
+}
 .mail-box{
     position: relative;
     padding-top: 5px;
@@ -351,7 +362,7 @@
 .link{
     text-decoration: none;
     color: black;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 .link:hover{
     text-decoration: underline;
@@ -364,9 +375,7 @@
 .small-text{
     font-size: 14px;
 }
-.color-gray{
-    color: rgb(160, 158, 158);
-}
+
 .min-h-100{
     min-height: 100vh;
 }
@@ -380,5 +389,16 @@
 }
 .site-button:hover{
     background-color: var(--var-button-hover-color);
+    cursor: pointer;
+}
+.class-box{
+    min-height: 200px;
+    transition: 0.5s;
+}
+.class-box h3{
+    font-size: 2em;
+}
+.class-box:hover{
+    transform: translateY(10px);
     cursor: pointer;
 }
