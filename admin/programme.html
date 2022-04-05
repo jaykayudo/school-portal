@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../apis/smart.default.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="../apis/smart.calendar.js"></script>
+    <title>Inbox</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2 class="sidenav-header">Admin</h2>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-th-large"></i></span
+              ><span class="nav-text">Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="staffs.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-users"></i></span
+              ><span class="nav-text">Staffs</span></a
+            >
+          </li>
+          <li>
+            <a href="students.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-user-graduate"></i></span
+              ><span class="nav-text">Students</span></a
+            >
+          </li>
+          <li>
+            <a href="inbox.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-envelope"></i></span
+              ><span class="nav-text">Inbox</span></a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-calendar-alt"></i></span
+              ><span class="nav-text">Events</span></a
+            >
+          </li>
+          <li>
+            <a href="programme.html" class="nav-link nav-active"
+              ><span class="nav-icon"><i class="fas fa-tasks"></i></span
+              ><span class="nav-text">Programme</span></a
+            >
+          </li>
+          <li>
+            <a href="finance.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-chart-pie"></i></span
+              ><span class="nav-text">Finance</span></a
+            >
+          </li>
+          <li>
+            <a href="report.html" class="nav-link"
+              ><span class="nav-icon"><i class="fab fa-readme"></i></span
+              ><span class="nav-text">Reports</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-cog"></i></span
+              ><span class="nav-text">Settings</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="content-nav">
+          <h2 class="greetings">Programme</h2>
+          <div class="nav-link-add">
+            <a href="#" class="nav-icon-add">Add class</a>
+            <a href="#" class="nav-icon-add second-btn">Add Subject</a>
+            <a href="#" class="nav-icon-add second-btn">Add Topic</a>
+          </div>
+        </div>
+
+        <!-- all syllabus -->
+        <div class="global-syllabus">
+          <div class="box table-box display">
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Quran</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Fiqh</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Aqeedah</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Seerah</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Hadith</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Tajweed</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Quran</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Fiqh</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Aqeedah</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Seerah</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Hadith</a>
+            </div>
+            <div class="subject">
+              <!-- subject -->
+              <a href="#" class="subject-header">Tajweed</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- all syllabus junior school -->
+        <!-- jss1 syllabus -->
+        <div class="syllabus">
+          <div class="syllabus-class">
+            <h1>Jss-1</h1>
+          </div>
+          <!-- table data -->
+          <div class="box table-box">
+            <table class="style-table">
+              <thead>
+                <tr>
+                  <th>Subject</th>
+
+                  <th>Term</th>
+
+                  <th>Remove Topic</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="flex-center">
+              <ul class="paginator">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of jss1 syllabus -->
+        <!-- jss2 syllabus -->
+        <div class="syllabus">
+          <div class="syllabus-class">
+            <h1>Jss-2</h1>
+          </div>
+          <!-- table data -->
+          <div class="box table-box">
+            <div class="table-name">Tafseer</div>
+            <table class="style-table">
+              <thead>
+                <tr>
+                  <th>Topics</th>
+
+                  <th>Term</th>
+
+                  <th>Remove Topic</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="flex-center">
+              <ul class="paginator">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- jss3 syllabus -->
+        <div class="syllabus">
+          <div class="syllabus-class">
+            <h1>Jss-3</h1>
+          </div>
+          <!-- table data -->
+          <div class="box table-box">
+            <div class="table-name">Tafseer</div>
+            <table class="style-table">
+              <thead>
+                <tr>
+                  <th>Topics</th>
+
+                  <th>Term</th>
+
+                  <th>Remove Topic</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="flex-center">
+              <ul class="paginator">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- all syllabus senior school -->
+        <!-- sss1 syllabus -->
+        <div class="syllabus">
+          <div class="syllabus-class">
+            <h1>sss-1</h1>
+          </div>
+          <!-- table data -->
+          <div class="box table-box">
+            <div class="table-name">Quran</div>
+            <table class="style-table">
+              <thead>
+                <tr>
+                  <th>Topics</th>
+
+                  <th>Term</th>
+
+                  <th>Remove Topic</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="flex-center">
+              <ul class="paginator">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of jss1 syllabus -->
+        <!-- sss2 syllabus -->
+        <div class="syllabus">
+          <div class="syllabus-class">
+            <h1>sss-2</h1>
+          </div>
+          <!-- table data -->
+          <div class="box table-box">
+            <div class="table-name">Tafseer</div>
+            <table class="style-table">
+              <thead>
+                <tr>
+                  <th>Topics</th>
+
+                  <th>Term</th>
+
+                  <th>Remove Topic</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="flex-center">
+              <ul class="paginator">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- sss3 syllabus -->
+        <div class="syllabus">
+          <div class="syllabus-class">
+            <h1>sss-3</h1>
+          </div>
+          <!-- table data -->
+          <div class="box table-box">
+            <div class="table-name">Tafseer</div>
+            <table class="style-table">
+              <thead>
+                <tr>
+                  <th>Topics</th>
+
+                  <th>Term</th>
+
+                  <th>Remove Topic</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>al-huruf l-arabiyah</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ummul kitab</td>
+                  <td>first</td>
+
+                  <td class="remove">
+                    <a href="#" class="table-icon-remove"
+                      ><i class="fas fa-minus"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="flex-center">
+              <ul class="paginator">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

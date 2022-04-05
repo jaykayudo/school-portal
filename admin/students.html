@@ -66,25 +66,25 @@
             >
           </li>
           <li>
-            <a href="#" class="nav-link"
+            <a href="events.html" class="nav-link"
               ><span class="nav-icon"><i class="fas fa-calendar-alt"></i></span
               ><span class="nav-text">Events</span></a
             >
           </li>
           <li>
-            <a href="#" class="nav-link"
+            <a href="programme.html" class="nav-link"
               ><span class="nav-icon"><i class="fas fa-tasks"></i></span
               ><span class="nav-text">Programme</span></a
             >
           </li>
           <li>
-            <a href="#" class="nav-link"
+            <a href="finance.html" class="nav-link"
               ><span class="nav-icon"><i class="fas fa-chart-pie"></i></span
               ><span class="nav-text">Finance</span></a
             >
           </li>
           <li>
-            <a href="#" class="nav-link"
+            <a href="report.html" class="nav-link"
               ><span class="nav-icon"><i class="fab fa-readme"></i></span
               ><span class="nav-text">Reports</span></a
             >
@@ -144,18 +144,38 @@
                 <option value="class">Tajweed</option>
               </select>
             </div>
+            <!-- subject filter -->
+            <div class="subject-filter">
+              <select name="filter-two" id="filter-two" class="filter-items">
+                <option value="class">Male</option>
+                <option value="class">Female</option>
+              </select>
+            </div>
+            <!-- subject filter -->
+            <div class="subject-filter">
+              <select name="filter-two" id="filter-two" class="filter-items">
+                <option value="class">Paid</option>
+                <option value="class">Unpaid</option>
+                <option value="class">Pending</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
       <!-- table data -->
       <div class="box table-box">
+        <div class="update-btn">
+          <a href="#" class="update-button">Update</a>
+        </div>
         <table class="style-table">
           <thead>
             <tr>
               <th>Student Name</th>
               <th>Sex</th>
               <th>Guardian phone no.</th>
-              <th>DOB</th>
+              <th>D.O.B</th>
+              <th>Promoted</th>
+              <th>Payment</th>
             </tr>
           </thead>
           <tbody>
@@ -173,6 +193,23 @@
               <td>Male</td>
               <td>08097916614</td>
               <td>15/03/2004</td>
+              <td>
+                <select
+                  name="promotion"
+                  id="promotion-status"
+                  class="filter-items"
+                >
+                  <option value="promoted">Promoted</option>
+                  <option value="promoted">Repeat</option>
+                </select>
+              </td>
+              <td>
+                <select name="filter-two" id="filter-two" class="filter-items">
+                  <option value="class">Paid</option>
+                  <option value="class">Unpaid</option>
+                  <option value="class">Pending</option>
+                </select>
+              </td>
             </tr>
             <tr>
               <td>
@@ -188,6 +225,23 @@
               <td>Female</td>
               <td>09023146784</td>
               <td>21/05/2006</td>
+              <td>
+                <select
+                  name="promotion"
+                  id="promotion-status"
+                  class="filter-items"
+                >
+                  <option value="promoted">Promoted</option>
+                  <option value="promoted">Repeat</option>
+                </select>
+              </td>
+              <td>
+                <select name="filter-two" id="filter-two" class="filter-items">
+                  <option value="class">Paid</option>
+                  <option value="class">Unpaid</option>
+                  <option value="class">Pending</option>
+                </select>
+              </td>
             </tr>
             <tr>
               <td>
@@ -203,6 +257,23 @@
               <td>Male</td>
               <td>08091123414</td>
               <td>02/12/2007</td>
+              <td>
+                <select
+                  name="promotion"
+                  id="promotion-status"
+                  class="filter-items"
+                >
+                  <option value="promoted">Promoted</option>
+                  <option value="promoted">Repeat</option>
+                </select>
+              </td>
+              <td>
+                <select name="filter-two" id="filter-two" class="filter-items">
+                  <option value="class">Paid</option>
+                  <option value="class">Unpaid</option>
+                  <option value="class">Pending</option>
+                </select>
+              </td>
             </tr>
             <tr>
               <td>
@@ -218,6 +289,23 @@
               <td>Female</td>
               <td>09055423414</td>
               <td>10/08/2007</td>
+              <td>
+                <select
+                  name="promotion"
+                  id="promotion-status"
+                  class="filter-items"
+                >
+                  <option value="promoted">Promoted</option>
+                  <option value="promoted">Repeat</option>
+                </select>
+              </td>
+              <td>
+                <select name="filter-two" id="filter-two" class="filter-items">
+                  <option value="class">Paid</option>
+                  <option value="class">Unpaid</option>
+                  <option value="class">Pending</option>
+                </select>
+              </td>
             </tr>
             <tr>
               <td>
@@ -233,6 +321,23 @@
               <td>Male</td>
               <td>07064617710</td>
               <td>08/09/2010</td>
+              <td>
+                <select
+                  name="promotion"
+                  id="promotion-status"
+                  class="filter-items"
+                >
+                  <option value="promoted">Promoted</option>
+                  <option value="promoted">Repeat</option>
+                </select>
+              </td>
+              <td>
+                <select name="filter-two" id="filter-two" class="filter-items">
+                  <option value="class">Paid</option>
+                  <option value="class">Unpaid</option>
+                  <option value="class">Pending</option>
+                </select>
+              </td>
             </tr>
           </tbody>
         </table>
