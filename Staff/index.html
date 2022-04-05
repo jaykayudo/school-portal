@@ -66,28 +66,20 @@
             >
           </li>
           <li>
-            <a href="#" class="nav-link"
+            <a href="#" id="logout-open" class="nav-link"
               ><span class="nav-icon"><i class="fa-solid fa-sign-out"></i></span
               ><span class="nav-text">Sign Out</span></a
             >
           </li>
         </ul>
       </div>
-      <div class="content">
-        <div class="content-nav">
-          <h2>Good Morning, Joshua Kay</h2>
-          <a href="#" class="content-nav-link">
-            <span class="nav-icon">
-              <i class="fa-solid fa-bell"></i>
-            </span>
-          </a>
-        </div>
         <div class="content">
             <div class="content-nav">
                 <h2>Good Morning, Joshua Kay</h2>
-                <a href="#" class="content-nav-link">
-                    <span class="nav-icon">
+                <a href="inbox.html" class="content-nav-link">
+                    <span class="nav-icon relative">
                         <i class="fa-solid fa-bell"></i>
+                        <span class="not-indic"></span>
                     </span>
                 </a>
                
@@ -154,8 +146,9 @@
                     <div class="column-4">
                         <div class="box">
                             <div class="profile-stat">
-                                <img src="images/Passport-Photos-Man.jpg" alt="">
-                                <p><b>Joshua Kay</b><br>
+                              <a href="profile.html"><img src="images/Passport-Photos-Man.jpg" alt=""></a>
+                                
+                                <p><a href="profile.html" class="link"><b>Joshua Kay</b></a><br>
                                     Maths Teacher
                                 </p>
                                 <span><strong></strong> active</span>
@@ -163,28 +156,85 @@
                             <div class="mt-2 flex-center">
                                 <smart-calendar id="calander"></smart-calendar>
                             </div>
+                            <div class="schedule-box">
+                                <h3><span>Schedule for <span id="log">Today</span></span> <span><a href="javascript::void(0)" class="link color-white" id="schedule-open" title="Add Schedule"><i class="fa-solid fa-plus"></i></a></span> </h3>
+                                <div class="modal-box hidden" id="schedule-modal">
+                                    <span class="close-btn flex-center" id="schedule-close" title="close"><i class="fa fa-xmark"></i></span>
+                                    <div class="form-box">
+                                        <h3 class="header">Add Schedule</h3>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Content" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="time" placeholder="Time" class="form-control"required>
+                                            </div>
+                                            <input type="submit" class="site-button" value="Add">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="scroll-box">
+                                    <div class="box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus aut fuga id. Blanditiis doloremque labore delectus recusandae quis. Unde autem veniam eos sit blanditiis! Ab magni rem perferendis! Officiis!
+                                        </p>
+                                        <footer>
+                                            <span><i class="fa-solid fa-clock">&nbsp;10:00am</i></span>
+                                        </footer>
+                                    </div>
+                                    <div class="box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus aut fuga id. Blanditiis doloremque labore delectus recusandae quis. Unde autem veniam eos sit blanditiis! Ab magni rem perferendis! Officiis!
+                                        </p>
+                                        <footer>
+                                            <span><i class="fa-solid fa-clock">&nbsp;10:00am</i></span>
+                                        </footer>
+                                    </div>
+                                    <div class="box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus aut fuga id. Blanditiis doloremque labore delectus recusandae quis. Unde autem veniam eos sit blanditiis! Ab magni rem perferendis! Officiis!
+                                        </p>
+                                        <footer>
+                                            <span><i class="fa-solid fa-clock">&nbsp;10:00am</i></span>
+                                        </footer>
+                                    </div>
+                                    <div class="box-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus aut fuga id. Blanditiis doloremque labore delectus recusandae quis. Unde autem veniam eos sit blanditiis! Ab magni rem perferendis! Officiis!
+                                        </p>
+                                        <footer>
+                                            <span><i class="fa-solid fa-clock">&nbsp;10:00am</i></span>
+                                        </footer>
+                                    </div>
+                                </div>
+                               
+
+                                    
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
               </div>
-              <div class="column-4">
-                <div class="box">
-                  <div class="profile-stat">
-                    <img src="images/Passport-Photos-Man.jpg" alt="" />
-                    <p>
-                      <b>Joshua Kay</b><br />
-                      Maths Teacher
-                    </p>
-                    <span><strong></strong> active</span>
-                  </div>
-                  <div>
-                    <smart-calendar id="calander"></smart-calendar>
-                  </div>
-                </div>
-              </div>
+              
             </div>
         </div>
       </div>
+    </div>
+    <div class="modal-box hidden" id="logout-modal">
+        
+        <div class="form-box">
+            <h3 class="header">Are you Sure?</h3>
+            <div class="logout-box">
+                <div class="form-group flex-between ">
+                    <a href="logout.html" class="site-button">Logout</a>
+                    <a href="javascript::void(0)"  id="logout-close" class="site-button site-button-invert">Cancel</a>
+                </div>
+            </div>
+               
+                
+            
+        </div>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
@@ -196,42 +246,25 @@
     <script src="script.js">
       
     </script>
-
-    <div class="content-items">
-      <!-- staff -->
-      <div class="search-filter">
-        <!-- searchbar -->
-        <div class="searchbar">
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="search ..."
-          />
-        </div>
-        <!-- class filter -->
-        <div class="class-filter">
-          <select name="filter-one" id="filter-one">
-            <option value="class">JSS-1</option>
-            <option value="class">JSS-2</option>
-            <option value="class">JSS-3</option>
-            <option value="class">SSS-1</option>
-            <option value="class">SSS-2</option>
-            <option value="class">SSS-3</option>
-          </select>
-        </div>
-        <!-- subject filter -->
-        <div class="subject-filter">
-          <select name="filter-two" id="filter-two">
-            <option value="class">Fiqh</option>
-            <option value="class">Aqeedah</option>
-            <option value="class">Seerah</option>
-            <option value="class">Hadith</option>
-            <option value="class">Quran</option>
-            <option value="class">Tajweed</option>
-          </select>
-        </div>
-      </div>
-    </div>
+    <script>
+        const calendar = document.querySelector('smart-calendar');
+    
+        calendar.addEventListener('change', function (event) {
+            var day = new Date(event.detail.value.toString());
+        
+        document.getElementById('log').innerHTML = day.toDateString() == new Date().toDateString() ? "Today":day.toDateString() ;
+    });
+    var scheduleModal = document.getElementById('schedule-modal');
+    var scheduleModalClose = document.getElementById('schedule-close');
+    scheduleModalClose.addEventListener('click',function(){
+        scheduleModal.classList.add('hidden')
+    })
+    var scheduleModalOpen = document.getElementById('schedule-open');
+    scheduleModalOpen.addEventListener('click',function(){
+        scheduleModal.classList.remove('hidden')
+    })
+    </script>
+   
+    
   </body>
 </html>

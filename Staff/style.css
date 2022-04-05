@@ -77,9 +77,18 @@
     color: white;
     background-color: #242038;
 }
+.row-6{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
 [class *= 'column-']
 {
     min-height: 100px;
+    
+}
+.column-6{
     
 }
 .pad-container{
@@ -98,6 +107,10 @@
 }
 .table-box{
     overflow-x: auto;
+}
+.pe-2{
+    padding-left: 20px!important;
+    padding-right: 20px!important;
 }
 .pt-1{
     padding-top: 1rem;
@@ -163,6 +176,18 @@
     width: 100px;
     height: auto;
     border-radius: 50%;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+.link:hover{
+    text-decoration: underline;
+    color: var(--var-button-hover-color);
+}
+.hidden{
+    display: none!important;
 }
 .profile-stat p{
     flex-direction: column;
@@ -342,6 +367,12 @@
 .color-primary{
     color: rgb(52, 121, 248);
 }
+.color-white{
+    color: white;
+}
+.bg-color{
+    background-color: var(--var-bg-color);
+}
 .mail-box{
     position: relative;
     padding-top: 5px;
@@ -359,15 +390,7 @@
     top: -3.5px;
     right: 7px;
 }
-.link{
-    text-decoration: none;
-    color: black;
-    transition: all 0.5s;
-}
-.link:hover{
-    text-decoration: underline;
-    color: var(--var-button-hover-color);
-}
+
 .flex-end{
     display: flex;
     justify-content: flex-end;
@@ -386,6 +409,7 @@
     background-color: var(--var-button-color);
     border: none;
     transition: 0.5s;
+    text-decoration: none;
 }
 .site-button:hover{
     background-color: var(--var-button-hover-color);
@@ -401,4 +425,146 @@
 .class-box:hover{
     transform: translateY(10px);
     cursor: pointer;
+}
+.schedule-box{
+    margin-top: 10px;
+}
+.schedule-box h3{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--var-table-head-bg);
+    color: white;
+}
+.schedule-box .box-content{
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: var(--var-bg-color);
+    margin-bottom: 10px;
+}
+.schedule-box .box-content p{
+    margin-bottom: 5px;
+}
+.schedule-box .box-content footer{
+    padding: 0px 10px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+.scroll-box{
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.modal-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 25, 25, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-box .form-box{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+.modal-box .form-box .header{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--var-table-head-bg);
+    font-size: 20px;
+}
+.modal-box .form-box form{
+    padding: 0 20px;
+}
+.modal-box .form-box .form-group{
+    padding: 5px 0px;
+}
+.modal-box .form-box .form-control{
+    width: 100%;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #242038;
+    font-size: 16px;
+    color: black;
+    padding: 8px;
+}
+.modal-box .form-box form .site-button{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.modal-box .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    color: rgb(199, 11, 11);
+    background-color: white;
+    border-radius: 8px;
+}
+.modal-box .close-btn:hover{
+    color: white;
+    background-color: rgb(199, 11, 11);
+}
+
+.logout-box{
+    padding: 20px;
+}
+.site-button-invert{
+    color: var(--var-button-color);
+    background-color: white;
+    border: 1px solid var(--var-button-color);
+}
+.site-button-invert:hover{
+    color: var(--var-button-hover-color);
+    background-color: white;
+    border: 1px solid var(--var-button-hover-color);
+}
+.detail-profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: var(--var-table-head-bg);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.detail-content{
+    list-style: none;
+    line-height: 3;
+}
+.line-height-small{
+    line-height: 2.5;
+}
+.inner-list{
+    padding-left: 20px;
+    line-height: 1.5;
+}
+.relative{
+    position: relative;
+}
+.not-indic{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 2px;
+    right: -3px;
 }
