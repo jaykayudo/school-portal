@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: cornflowerblue;
+}
+form {
+  width: 40%;
+  padding: 30px;
+  background-color: aliceblue;
+  margin: 50px auto;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+input {
+  margin-top: 10px;
+  height: 30px;
+  width: 250px;
+}
+label {
+  display: block;
+}
+.input {
+  width: 50%;
+  text-align: left;
+  margin: 50px auto;
+}
+#email {
+  margin-bottom: 30px;
+}
+form h1 {
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 70px;
+  width: 250px;
+  border: 0px;
+  background-color: cornflowerblue;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  border-bottom: 3px solid;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
