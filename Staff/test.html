@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Uploads</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 class="sidenav-header">
+                Staff
+            </h2>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link "><span class="nav-icon"><i class="fa-solid fa-house"></i></span><span class="nav-text">Home</span></a></li>
+                <li><a href="class.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-landmark"></i></span><span class="nav-text">Class</span></a></li>
+                <li><a href="student.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-users"></i></span><span class="nav-text">Students</span></a></li>
+                <li><a href="inbox.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-envelope"></i></span><span class="nav-text">Inbox</span></a></li>
+                <li><a href="test.html" class="nav-link nav-active"><span class="nav-icon"><i class="fa-solid fa-upload"></i></span><span class="nav-text">Uploads</span></a></li>
+                <li><a href="javascript::void(0)" id="logout-open"class="nav-link"><span class="nav-icon"><i class="fa-solid fa-sign-out"></i></span><span class="nav-text">Sign Out</span></a></li>
+            </ul>
+            
+        </div>
+        <div class="content">
+            <div class="pad-container pt-4">
+                <h2 class="header">
+                    Uploads
+                </h2>
+                    <div class="pad-container">
+                        <div class="row">
+                            <div class="column-4">
+                                <div class="box flex-between text-large ">
+                                    <p class="pe-2">Syllabus Jss1</p> <p class="pe-2"><i class="fa fa-check color-success"></i></p>
+                                </div>
+                            </div>
+                            <div class="column-4">
+                                <div class="box flex-between text-large ">
+                                    <p class="pe-2">Syllabus Jss2</p> <p class="pe-2"><i class="fa fa-close color-danger"></i></p>
+                                </div>
+                            </div>
+                            <div class="column-4">
+                                <div class="box flex-between text-large ">
+                                    <p class="pe-2">Syllabus Jss1</p> <p class="pe-2"><i class="fa fa-check color-success"></i></p>
+                                </div>
+                            </div>
+                            <div class="column-4">
+                                <div class="box flex-between text-large ">
+                                    <p class="pe-2">Attendance Jss1</p> <p class="pe-2"><i class="fa fa-close color-danger"></i></p>
+                                </div>
+                            </div>
+                            <div class="column-4">
+                                <div class="box flex-between text-large ">
+                                    <p class="pe-2">Attendance Jss2</p> <p class="pe-2"><i class="fa fa-close color-danger"></i></p>
+                                </div>
+                            </div>
+                            <div class="column-4">
+                                <div class="box flex-between text-large ">
+                                    <p class="pe-2">Attendance Jss3</p> <p class="pe-2"><i class="fa fa-close color-danger"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-form-box">
+                            <div class="form-header">
+                                Upload File
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder=" ">
+                                    <label> Message </label>
+                                </div>
+                                <div class="form-group">
+                                   <select name="" id="" class="form-control" style="padding-left: 4px;">
+                                       <option value="">Choose a Section</option>
+                                       <option value="">Schedule</option>
+                                       <option value="">Syllabus - JSS1</option>
+                                       <option value="">Syllabus - JSS2</option>
+                                       <option value="">Syllabus - JSS3</option>
+                                       <option value="">Attendance - JSS1</option>
+                                       <option value="">Attendance - JSS2</option>
+                                       <option value="">Attendance - JSS3</option>
+                                       <option value="">Others</option>
+                                   </select>
+                                </div>
+                                <div class="form-group">
+                                    <button class="site-button" id="file-button"><i class="fa fa-upload"></i> Choose a File</button> <span id="file-text" class="small-text">No File Chosen</span>
+                                    <input type="file" name="file" id="file" hidden>
+                                </div>
+                                <div class="form-group flex-center">
+                                    <input type="submit" value="Upload" class="site-button">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-box hidden" id="logout-modal">
+        
+        <div class="form-box">
+            <h3 class="header">Are you Sure?</h3>
+            <div class="logout-box">
+                <div class="form-group flex-between ">
+                    <a href="logout.html" class="site-button">Logout</a>
+                    <a href="javascript::void(0)"  id="logout-close" class="site-button site-button-invert">Cancel</a>
+                </div>
+            </div>
+               
+                
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('file-button').onclick = function(e){
+            e.preventDefault()
+            document.getElementById('file').click()
+        }
+        document.getElementById('file').onchange = function(e){
+            if(e.target.value == ""){
+                document.getElementById('file-text').textContent = "No File Chosen"
+            }
+            else{
+                document.getElementById('file-text').textContent = e.target.files.length + " File Chosen"
+            }
+        }
+    </script>
+</body>
+</html>
