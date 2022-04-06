@@ -58,6 +58,10 @@ li {
 .sub {
   margin-right: 8px;
 }
+.login_login a {
+  color: white;
+  text-decoration: none;
+}
 .login_login,
 .login_register {
   margin-left: 15px;
@@ -71,6 +75,9 @@ li {
   width: 85%;
   margin: auto;
   justify-content: space-between;
+}
+.topNav a {
+  text-decoration: none;
 }
 .topNav h3 {
   font-size: 28px;
