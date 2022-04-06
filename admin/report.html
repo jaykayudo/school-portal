@@ -90,9 +90,15 @@
             >
           </li>
           <li>
-            <a href="#" class="nav-link"
+            <a href="settings.html" class="nav-link"
               ><span class="nav-icon"><i class="fas fa-cog"></i></span
               ><span class="nav-text">Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" id="logout-open" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-sign-out-alt"></i></span
+              ><span class="nav-text">Sign Out</span></a
             >
           </li>
         </ul>
@@ -318,7 +324,7 @@
         </div>
       </div>
     </div>
-    <script src="finance.js"></script>
+
     <script type="module" src="../apis/smart.calendar.js"></script>
     <script>
       window.onload = function () {
@@ -336,5 +342,22 @@
         ];
       };
     </script>
+    <div class="modal-box hidden" id="logout-modal">
+      <div class="form-box">
+        <h3 class="header">Are you Sure?</h3>
+        <div class="logout-box">
+          <div class="form-group flex-between">
+            <a href="logout.html" class="site-button">Logout</a>
+            <a
+              href="javascript::void(0)"
+              id="logout-close"
+              class="site-button site-button-invert"
+              >Cancel</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="sigout.js"></script>
   </body>
 </html>
