@@ -1,5 +1,5 @@
-var canvasElement = document.getElementById("cookieChart");
-var config = {
+let canvasElement = document.getElementById("cookieChart");
+let config = {
   type: "bar",
   data: {
     labels: ["utilities", "salary", "debt", "employees", "students"],
@@ -26,5 +26,4 @@ var config = {
     ],
   },
 };
-
-var cookieChart = new Chart(canvasElement, config);
+let cookieChart = new Chart(canvasElement, config);

@@ -52,7 +52,7 @@ body {
 
 .nav-active {
   color: #242038;
-  border-left: 5px solid #242038;
+  border-right: 5px solid #242038;
 }
 .nav-link:hover {
   background-color: #242038;
@@ -535,4 +535,330 @@ body {
   background-color: var(--var-button-hover-color);
   color: white;
   transition: 0.5s;
+}
+.pad-container {
+  width: 90%;
+  margin: auto;
+}
+.pt-4 {
+  padding-top: 3rem;
+}
+.header {
+  padding: 20px 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.row-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.detail-profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--var-table-head-bg);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  object-fit: cover;
+}
+.detail-content {
+  list-style: none;
+  line-height: 3;
+  padding-left: 30px;
+}
+.line-height-small {
+  line-height: 2.5;
+}
+.inner-list {
+  padding-left: 20px;
+  line-height: 1.5;
+}
+.color-success {
+  color: var(--var-success-color);
+}
+.modal-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 25, 25, 0.445);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-box .form-box {
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+}
+.modal-box .form-box .header {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--var-table-head-bg);
+  font-size: 20px;
+}
+.modal-box .form-box form {
+  padding: 0 20px;
+}
+.modal-box .form-box .form-group {
+  padding: 5px 0px;
+}
+.modal-box .form-box .form-control {
+  width: 100%;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid #242038;
+  font-size: 16px;
+  color: black;
+  padding: 8px;
+}
+.modal-box .form-box form .site-button {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.modal-box .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  color: rgb(199, 11, 11);
+  background-color: white;
+  border-radius: 8px;
+}
+.modal-box .close-btn:hover {
+  color: white;
+  background-color: rgb(199, 11, 11);
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logout-box {
+  padding: 20px;
+}
+.site-button {
+  padding: 10px 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--var-button-color);
+  border: none;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.site-button:hover {
+  background-color: var(--var-button-hover-color);
+  cursor: pointer;
+}
+.site-button-invert {
+  color: var(--var-button-color);
+  background-color: white;
+  border: 1px solid var(--var-button-color);
+}
+.site-button-invert:hover {
+  color: var(--var-button-hover-color);
+  background-color: white;
+  border: 1px solid var(--var-button-hover-color);
+}
+.id-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 10px 5px rgba(41, 41, 41, 0.041);
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.id-card {
+  background-color: #242038;
+  color: white;
+}
+.student-card-detail {
+  display: flex;
+  padding-left: 30px;
+  color: white;
+}
+.student-item {
+  font-size: 15px;
+}
+.hidden {
+  display: none !important;
+}
+/* settings */
+.settings-content {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+.settings-wrapper {
+  width: 100%;
+  /* padding: 5px 0; */
+  border-bottom: 1px solid #242038;
+}
+.settings-nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.settings-nav-link {
+  text-decoration: none;
+  color: #932f6d;
+  padding: 10px 0;
+
+  display: inline-block;
+}
+.settings-nav-item {
+  list-style-type: none;
+}
+.nav-current {
+  color: #932f6d;
+  border-bottom: 5px solid #242038;
+}
+.details-nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-info {
+  margin-top: 20px;
+}
+.personal-info-header {
+  font-size: 22px;
+  font-weight: 400;
+}
+.personal-info-sub-header {
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.nav-icon-cancel {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 20px;
+  color: var(--var-links-color);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.nav-icon-save {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #242038;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.nav-icon-cancel:hover {
+  background-color: #242038;
+  color: white;
+  transition: 0.5s;
+}
+.nav-icon-save:hover {
+  background-color: #932f6d;
+  color: white;
+  transition: 0.5s;
+}
+.personnel-name {
+  width: 100%;
+  padding: 40px;
+  border-top: 1px solid #24203824;
+  border-bottom: 1px solid #24203824;
+  margin-top: 20px;
+}
+.personnel-container {
+  width: 800px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-name {
+  margin-top: 20px;
+}
+.detail-name-header {
+  font-size: 15px;
+}
+.detail-name-input {
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-one {
+  width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  outline: none;
+}
+.personnel-email {
+  width: 100%;
+  padding: 40px;
+
+  border-bottom: 1px solid #24203824;
+  margin-top: 20px;
+}
+.email-container {
+  width: 800px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-two {
+  width: 520px;
+  padding: 15px;
+  border-radius: 8px;
+  outline: none;
+}
+.photo-info {
+  font-size: 12px;
+}
+.admin-img {
+  width: 70px;
+  height: 70px;
+}
+.admin-profile-icon {
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-three {
+  width: 420px;
+  padding: 15px;
+  border: 1px solid #24203824;
+  border-radius: 8px;
+  outline: none;
+}
+.personnel-role {
+  width: 100%;
+  padding: 40px;
+
+  border-bottom: 1px solid #24203824;
+  margin-top: 20px;
+}
+.role-container {
+  width: 800px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+::placeholder {
+  font-style: italic;
 }
