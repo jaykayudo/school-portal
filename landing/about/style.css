@@ -1,0 +1,14 @@
+body {
+  background-color: purple;
+  color: white;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 74px;
+}
+p {
+  margin-left: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+}
