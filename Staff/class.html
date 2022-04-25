@@ -24,35 +24,80 @@
                 <li><a href="class.html" class="nav-link nav-active"><span class="nav-icon"><i class="fa-solid fa-landmark"></i></span><span class="nav-text">Class</span></a></li>
                 <li><a href="student.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-users"></i></span><span class="nav-text">Students</span></a></li>
                 <li><a href="inbox.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-envelope"></i></span><span class="nav-text">Inbox</span></a></li>
-                <li><a href="#" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-book-open"></i></span><span class="nav-text">Tests</span></a></li>
-                <li><a href="#" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-sign-out"></i></span><span class="nav-text">Sign Out</span></a></li>
+                <li><a href="test.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-upload"></i></span><span class="nav-text">Uploads</span></a></li>
+                <li><a href="javascript::void(0)" id="logout-open"class="nav-link"><span class="nav-icon"><i class="fa-solid fa-sign-out"></i></span><span class="nav-text">Sign Out</span></a></li>
             </ul>
             
         </div>
         <div class="content">
             <div class="pad-container pt-4">
+                <h2 class="header">
+                    Your Classes
+                </h2>
                 <div class="row">
                     <div class="column-4">
-                        <div class="box">
-                            <h3>JSS 1</h3>
-                        </div>
-                    </div>
-                    <div class="column-4">
-                        <div class="box big-flex-box">
-                            <h3>
-                                JSS2
-                            </h3>
-                        </div>
+                        <a href="class-details.html" class="link">
+                            <div class="box flex-center class-box">
+                                <h3>JSS 1</h3>
+                            </div>
+                        </a>
                         
                     </div>
                     <div class="column-4">
-                        <div class="box">
-                            <h3>JSS 3</h3>
-                        </div>
+                        <a href="#" class="link">
+                            <div class="box flex-center class-box">
+                                <h3>JSS 2</h3>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="column-4">
+                        <a href="#" class="link">
+                            <div class="box flex-center class-box">
+                                <h3>JSS 3</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column-4">
+                        <a href="#" class="link">
+                            <div class="box flex-center class-box">
+                                <h3>SSS 1</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column-4">
+                        <a href="#" class="link">
+                            <div class="box flex-center class-box">
+                                <h3>SSS 2</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column-4">
+                        <a href="#" class="link">
+                            <div class="box flex-center class-box">
+                                <h3>SSS 3</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal-box hidden" id="logout-modal">
+        
+        <div class="form-box">
+            <h3 class="header">Are you Sure?</h3>
+            <div class="logout-box">
+                <div class="form-group flex-between ">
+                    <a href="logout.html" class="site-button">Logout</a>
+                    <a href="javascript::void(0)"  id="logout-close" class="site-button site-button-invert">Cancel</a>
+                </div>
+            </div>
+               
+                
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -24,8 +24,8 @@
                 <li><a href="class.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-landmark"></i></span><span class="nav-text">Class</span></a></li>
                 <li><a href="student.html" class="nav-link nav-active"><span class="nav-icon"><i class="fa-solid fa-users"></i></span><span class="nav-text">Students</span></a></li>
                 <li><a href="inbox.html" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-envelope"></i></span><span class="nav-text">Inbox</span></a></li>
-                <li><a href="#" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-book-open"></i></span><span class="nav-text">Tests</span></a></li>
-                <li><a href="#" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-sign-out"></i></span><span class="nav-text">Sign Out</span></a></li>
+                <li><a href="#" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-upload"></i></span><span class="nav-text">Uploads</span></a></li>
+                <li><a href="javascript::void(0)" id="logout-open" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-sign-out"></i></span><span class="nav-text">Sign Out</span></a></li>
             </ul>
             
         </div>
@@ -54,13 +54,14 @@
                     <select name="" id="" class="filter">
                         <Option> Subject</Option>
                         <option value="math">Maths</option>
-                        <option value="eng">Eng</option>
+                        <option value="physics">Physics</option>
                         <option value="agric">Agric</option>
                     </select>
                 </div>
             </div>
             <div class="box table-box">
                 <table class="style-table">
+                    <caption>300 Students</caption>
                     <thead>
                         <tr>
                             <th>Student Name</th>
@@ -72,8 +73,8 @@
                     <tbody>
                         <tr>
                             <td>
-                                <a href="#" class="table-link">
-                                    <img src="images/Passport-Photos-Man.jpg" alt="Adam sandler image" class="table-image">
+                                <a href="student-details.html" class="table-link">
+                                    <img src="images/img.jpg" alt="Adam sandler image" class="table-image">
                                     Adam Sandler
                                 </a>
                             </td>
@@ -104,6 +105,57 @@
                                 Maths, Agric
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="table-link">
+                                    <img src="images/Passport-Photos-Man.jpg" alt="Adam sandler image" class="table-image">
+                                    Kira Yakumazi
+                                </a>
+                            </td>
+                            <td>
+                                Female
+                            </td>
+                            <td>
+                                Jss1
+                            </td>
+                            <td>
+                                Maths, Agric
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="table-link">
+                                    <img src="images/Passport-Photos-Man.jpg" alt="Adam sandler image" class="table-image">
+                                    Kira Yakumazi
+                                </a>
+                            </td>
+                            <td>
+                                Female
+                            </td>
+                            <td>
+                                Jss1
+                            </td>
+                            <td>
+                                Maths, Agric
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="table-link">
+                                    <img src="images/Passport-Photos-Man.jpg" alt="Adam sandler image" class="table-image">
+                                    Kira Yakumazi
+                                </a>
+                            </td>
+                            <td>
+                                Female
+                            </td>
+                            <td>
+                                Jss1
+                            </td>
+                            <td>
+                                Maths, Physics
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="flex-center">
@@ -119,5 +171,21 @@
         </div>
         </div>
     </div>
+    <div class="modal-box hidden" id="logout-modal">
+        
+        <div class="form-box">
+            <h3 class="header">Are you Sure?</h3>
+            <div class="logout-box">
+                <div class="form-group flex-between ">
+                    <a href="logout.html" class="site-button">Logout</a>
+                    <a href="javascript::void(0)"  id="logout-close" class="site-button site-button-invert">Cancel</a>
+                </div>
+            </div>
+               
+                
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
