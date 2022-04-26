@@ -95,6 +95,8 @@ li {
 }
 .middle {
   margin-top: 100px;
+  height: 60vh;
+  border: 1px solid black;
 }
 .middle-h1 {
   text-align: center;
@@ -107,4 +109,59 @@ li {
   color: white;
   font-family: sans-serif;
   line-height: 30px;
+}
+.middle-explore {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+.middle-explore a {
+  font-size: 12px;
+  border: 1px solid white;
+  padding: 15px 25px;
+  border-radius: 25px;
+}
+.forms {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  padding-top: 70px;
+}
+.forms-form {
+  width: 70%;
+}
+.forms-contact {
+  width: 50%;
+}
+.forms input {
+  padding: 10px 10px;
+}
+.form-top {
+  display: flex;
+  justify-content: space-between;
+}
+.form-top .email {
+  width: 40%;
+  right: 0;
+}
+.form-top .name {
+  width: 40%;
+}
+.forms-form .subject {
+  width: 100%;
+  margin-top: 20px;
+}
+textarea {
+  width: 100%;
+  margin-top: 20px;
+  height: 150px;
+}
+form button {
+  padding: 15px 25px;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.forms-contact {
+  padding: 0px 30px;
 }
