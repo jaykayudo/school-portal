@@ -63,6 +63,7 @@ body {
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 /* .greetings {
   font-size: 15px;
@@ -168,6 +169,7 @@ body {
   grid-row: 1/4;
 }
 .content-sub-inbox {
+  /* width: 800px; */
   border-radius: 8px;
   background-color: rgb(233, 231, 231);
   box-shadow: 0px 0px 10px 5px rgba(41, 41, 41, 0.041);
@@ -257,7 +259,7 @@ body {
 .box {
   background-color: white;
   border-radius: 8px;
-  padding: 20px 10px;
+  padding: 20px 30px;
   box-shadow: 0px 0px 10px 5px rgba(41, 41, 41, 0.041);
   margin-bottom: 20px;
   margin-left: 20px;
@@ -291,7 +293,7 @@ body {
 }
 .table-box {
   overflow-x: auto;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 .table-image {
   display: inline-block;
@@ -354,6 +356,7 @@ body {
   justify-content: space-around;
 }
 .content-scroll-up {
+  margin-top: 20px;
   height: 90vh;
   overflow: scroll;
 
@@ -364,6 +367,11 @@ body {
 }
 .content-subject-up {
   text-decoration: none;
+}
+.calendar {
+  margin-top: 20px;
+}
+.nav-link-send-receive {
 }
 .status-icon {
   position: absolute;
@@ -541,12 +549,12 @@ body {
   margin: auto;
 }
 .pt-4 {
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
 }
 .header {
-  padding: 20px 0;
+  /* padding: 20px 0;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 .row-6 {
   display: grid;
@@ -571,7 +579,7 @@ body {
 .detail-content {
   list-style: none;
   line-height: 3;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 .line-height-small {
   line-height: 2.5;
@@ -676,7 +684,7 @@ body {
 .id-card {
   background-color: white;
   border-radius: 8px;
-  padding: 20px 10px;
+  padding: 20px 30px;
   box-shadow: 0px 0px 10px 5px rgba(41, 41, 41, 0.041);
   margin-bottom: 20px;
   margin-left: 20px;
@@ -685,9 +693,14 @@ body {
   background-color: #242038;
   color: white;
 }
+.id-card-header {
+  padding-bottom: 5px;
+}
 .student-card-detail {
+  width: 450px;
   display: flex;
-  padding-left: 30px;
+  justify-content: space-between;
+  /* padding-left: 30px; */
   color: white;
 }
 .student-item {
@@ -700,9 +713,10 @@ body {
 .settings-content {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 .settings-wrapper {
+  margin-top: 40px;
   width: 100%;
   /* padding: 5px 0; */
   border-bottom: 1px solid #242038;
@@ -861,4 +875,24 @@ body {
 }
 ::placeholder {
   font-style: italic;
+}
+.input-four {
+  width: 520px;
+  padding: 15px;
+  border-radius: 8px;
+  outline: none;
+}
+.password-message {
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.notification-description {
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.input-description {
+  font-size: 14px;
+  font-weight: 300;
 }
