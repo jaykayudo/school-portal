@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+    <title>Student| Adam Sandler</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2 class="sidenav-header">Admin</h2>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-th-large"></i></span
+              ><span class="nav-text">Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="staffs.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-users"></i></span
+              ><span class="nav-text">Staffs</span></a
+            >
+          </li>
+          <li>
+            <a href="students.html" class="nav-link nav-active"
+              ><span class="nav-icon"><i class="fas fa-user-graduate"></i></span
+              ><span class="nav-text">Students</span></a
+            >
+          </li>
+          <li>
+            <a href="inbox.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-envelope"></i></span
+              ><span class="nav-text">Inbox</span></a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-calendar-alt"></i></span
+              ><span class="nav-text">Events</span></a
+            >
+          </li>
+          <li>
+            <a href="programme.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-tasks"></i></span
+              ><span class="nav-text">Programme</span></a
+            >
+          </li>
+
+          <li>
+            <a href="settings.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-cog"></i></span
+              ><span class="nav-text">Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" id="logout-open" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-sign-out-alt"></i></span
+              ><span class="nav-text">Sign Out</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="pad-container pt-4">
+          <div class="pt-4">
+            <h2 class="header flex-center">Add Staff</h2>
+          </div>
+          
+        <div class="flex-center page-box">
+            <div class="large-form-box">
+                <div class="form-header">
+                    Fill the Form
+                </div>
+                <form action="" class="mb-4">
+                    <div class="boot-row mb-4">
+                        <div class="col-6">
+                            <img src="images/Passport-Photos-Man.jpg" alt="" class="detail-profile-image" style="width: 100px; height: 100px;">
+                        </div>
+                        <div class="form-group col-6">
+                            <button class="site-button" type="button">
+                            <i class="fa fa-upload"></i> Upload Profile Picture
+                        </button>
+                        </div>
+                        
+                    </div>
+                    <div class="boot-row mb-4"> <div class="side-form-group col-6 ">
+                        <input type="text" class="form-control" placeholder=" ">
+                        <label> First Name* </label>
+                    </div>
+                    <div class="side-form-group col-6">
+                        <input type="text" class="form-control" placeholder=" ">
+                        <label> Last Name* </label>
+                    </div></div>
+                    
+                    <div class="boot-row mb-4"> <div class="side-form-group col-6 ">
+                        <select name="" id="" class="form-control" style="padding-left: 4px;">
+                            <option value="">Sex*</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                        
+                    </div>
+                    <div class="side-form-group col-6">
+                        <input type="tel" class="form-control" placeholder=" ">
+                        <label> Phone Number* </label>
+                    </div></div>
+                    <div class="boot-row mb-4">
+                        <div class="side-form-group col-6">
+                            <select onchange="toggleLGA(this);" name="state" id="state" class="form-control" placeholder=" " required>
+                                <option value="" >State*</option>
+                                <option value="Abia">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="AkwaIbom">AkwaIbom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="Cross River">Cross River</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="FCT">FCT</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nasarawa">Nasarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamfara</option>
+                            </select>
+                        </div>
+                        <div class="col-6 side-form-group">
+                            <select name="lga" id="lga" class="select-lga form-control" placeholder=" " required>
+                                <option value="">L.G.A*</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" name="email" class="form-control" placeholder=" ">
+                        <label> Email*</label>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="text" name="text" class="form-control" placeholder=" ">
+                        <label> Home Town* </label>
+                    </div>
+                    <div class="form-group mb-4">
+                        <select name="" class="form-control" id="staff_type" style="padding-left: 4px;" required>
+                            <option value="">Staff Type*</option>
+                            <option value="t">Teaching Staff</option>
+                            <option value="n">Non teaching staff</option>
+                        </select>
+                        
+                    </div>
+                    <div class="hidden" id="teaching_box">
+                        
+                            <div class="mb-4" id="class_box">
+                                <div>
+                                    <div class="boot-row mb-4">
+                                     <div class="side-form-group col-4">
+                                         <select  class="form-control" placeholder=" " required>
+                                             <option value="">Class</option>
+                                         </select>
+                                     </div>
+                                     <div class="col-6 side-form-group">
+                                         <select  class="form-control" placeholder=" " required>
+                                             <option value="">Subject</option>
+                                         </select>
+                                     </div>
+                                     <div class="col-2 side-form-group flex-center">
+                                         <button class="site-button w-100 m-none" id="add-form" type="button">
+                                             <i class="fa fa-plus"></i>
+                                         </button>
+                                     </div>
+                                     </div>
+                                </div>
+                                 
+                             </div>
+                             <div class="boot-row mb-4"> <div class="side-form-group col-6 ">
+                                <input type="password" class="form-control" placeholder=" " required>
+                                <label> Password*</label>
+                            </div>
+                            <div class="side-form-group col-6">
+                                <input type="password" class="form-control" placeholder=" " required>
+                                <label> Confirm Password* </label>
+                            </div></div>   
+                        
+                    </div>
+                     <div class="form-group mb-4">
+                                <input type="text" name="text" class="form-control" placeholder=" ">
+                                <label> Position </label>
+                    </div>
+                   
+                    <div class="form-group flex-center">
+                        <input type="submit" value="Submit" class="site-button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="modal-box hidden" id="logout-modal">
+      <div class="form-box">
+        <h3 class="header">Are you Sure?</h3>
+        <div class="logout-box">
+          <div class="form-group flex-between">
+            <a href="logout.html" class="site-button">Logout</a>
+            <a
+              href="javascript::void(0)"
+              id="logout-close"
+              class="site-button site-button-invert"
+              >Cancel</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../sigout.js"></script>
+    <script src="../../apis/lga.min.js"></script>
+    <script src="form.js"></script>
+    <script src="../../apis/jquery.js"></script>
+    <script type="text/javascript">
+        var html = `<div id="class-container">
+                                    <div class="boot-row mb-4">
+                                     <div class="side-form-group col-4">
+                                         <select  class="form-control" placeholder=" " required>
+                                             <option value="">Class</option>
+                                         </select>
+                                     </div>
+                                     <div class="col-6 side-form-group">
+                                         <select  class="form-control" placeholder=" " required>
+                                             <option value="">Subject</option>
+                                         </select>
+                                     </div>
+                                     <div class="col-2 side-form-group flex-center">
+                                         <button class="site-button w-100 m-none" id="remove" type="button">
+                                             <i class="fa fa-minus"></i>
+                                         </button>
+                                     </div>
+                                     </div>
+                                </div>`
+        var x = 1;
+        var max = 5;
+        console.log('#add-form')
+        $("#add-form").click(function(){
+            if(x<max){
+            $("#class_box").append(html);
+            x++;
+        }
+        })
+        $("#class_box").on('click','#remove',function(){
+            $(this).closest('#class-container').remove()
+            x--;
+        })
+    
+    </script>
+  </body>
+</html>

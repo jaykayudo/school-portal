@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+    <title>Student| Adam Sandler</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2 class="sidenav-header">Admin</h2>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-th-large"></i></span
+              ><span class="nav-text">Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="staffs.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-users"></i></span
+              ><span class="nav-text">Staffs</span></a
+            >
+          </li>
+          <li>
+            <a href="students.html" class="nav-link nav-active"
+              ><span class="nav-icon"><i class="fas fa-user-graduate"></i></span
+              ><span class="nav-text">Students</span></a
+            >
+          </li>
+          <li>
+            <a href="inbox.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-envelope"></i></span
+              ><span class="nav-text">Inbox</span></a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-calendar-alt"></i></span
+              ><span class="nav-text">Events</span></a
+            >
+          </li>
+          <li>
+            <a href="programme.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-tasks"></i></span
+              ><span class="nav-text">Programme</span></a
+            >
+          </li>
+
+          <li>
+            <a href="settings.html" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-cog"></i></span
+              ><span class="nav-text">Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" id="logout-open" class="nav-link"
+              ><span class="nav-icon"><i class="fas fa-sign-out-alt"></i></span
+              ><span class="nav-text">Sign Out</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="pad-container pt-4">
+          <div class="pt-4">
+            <h2 class="header flex-center">Add Subject</h2>
+          </div>
+          
+        <div class="flex-center page-box">
+            <div class="large-form-box">
+                <div class="form-header">
+                    Fill the Form
+                </div>
+                <form action="" class="mb-4">
+                   
+                    <div class="form-group mb-4">
+                        <input type="text" name="text" class="form-control" placeholder=" ">
+                        <label> Subject Name* </label>
+                    </div>
+                    
+                    <div class="form-group mb-4">
+                        <input type="text" name="" class="form-control" placeholder=" ">
+                        <label> Subject Abbr* </label>
+                    </div>
+                    
+                    <div class="form-group flex-center">
+                        <button class="site-button">
+                            <i class="fas fa-plus"></i>&nbsp;Add
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="modal-box hidden" id="logout-modal">
+      <div class="form-box">
+        <h3 class="header">Are you Sure?</h3>
+        <div class="logout-box">
+          <div class="form-group flex-between">
+            <a href="logout.html" class="site-button">Logout</a>
+            <a
+              href="javascript::void(0)"
+              id="logout-close"
+              class="site-button site-button-invert"
+              >Cancel</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../sigout.js"></script>
+    <script src="../../apis/lga.min.js"></script>
+  </body>
+</html>
