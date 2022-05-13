@@ -1,13 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-li {
-  display: inline-block;
-  margin-left: 50px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: light 300;
 }
 .background {
   width: 100vw;
@@ -20,11 +14,15 @@ li {
   object-fit: cover;
   position: fixed;
   top: 0;
+  left: 0;
 }
 .container {
   z-index: 9999;
   position: relative;
   top: 0;
+  border: 1px solid;
+  left: 0;
+  right: 0;
 }
 .scrollbar {
   padding: 20px;
@@ -41,6 +39,10 @@ li {
   margin-right: 10px;
   color: white;
   font-weight: lighter;
+  display: inline-block;
+  margin-left: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: light 300;
 }
 .topMain {
   display: flex;
@@ -77,14 +79,16 @@ li {
 .topNav a {
   text-decoration: none;
 }
+
 .topNav h3 {
   font-size: 28px;
   color: white;
   font-family: sans-serif;
   font-weight: 300;
 }
-.topNav a {
+.enroll {
   display: block;
+  text-align: center;
   border: 1px solid white;
   font-size: 16px;
   width: 10%;
@@ -93,75 +97,91 @@ li {
   color: white;
   font-family: sans-serif;
 }
-.middle {
-  margin-top: 100px;
-  height: 60vh;
-  border: 1px solid black;
-}
-.middle-h1 {
-  text-align: center;
+.topNav li a {
+  text-decoration: none;
+  border: 0px soild;
+  display: block;
   color: white;
-  font-size: 50px;
+  text-decoration: none;
 }
-.middle-p {
-  margin-top: 20px;
-  text-align: center;
-  color: white;
-  font-family: sans-serif;
-  line-height: 30px;
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 80%;
+  margin: 50px auto;
+  grid-gap: 40px;
+  height: 70vh;
 }
-.middle-explore {
-  text-align: center;
-  color: white;
-  margin-top: 50px;
-}
-.middle-explore a {
-  font-size: 12px;
-  border: 1px solid white;
-  padding: 15px 25px;
-  border-radius: 25px;
-}
-.forms {
-  padding: 30px;
-  background-color: white;
+.news_content {
   display: flex;
-  padding-top: 70px;
+  flex-direction: row;
 }
-.forms-form {
+.news_content .img {
+  width: 30%;
+  background-image: url("../images/Screenshot\ \(68\).png");
+}
+.news_content .content {
+  color: white;
   width: 70%;
+  padding: 0px 15px;
+  background-color: rgba(255, 182, 193, 0.2);
 }
-.forms-contact {
-  width: 50%;
+.content p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
 }
-.forms input {
-  padding: 10px 10px;
+.content h2 {
+  font-weight: lighter;
 }
-.form-top {
+.footer {
+  margin-top: 50px;
+  color: white;
+  background-color: rgba(92, 83, 136, 0.4);
+  padding: 20px;
+  font-family: sans-serif;
+}
+.footerSub h3 {
+  font-weight: 200;
+}
+.footer p,
+.projects li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.footerSub {
+  width: 100%;
+  padding: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
-.form-top .email {
-  width: 49%;
-  right: 0;
+.about_school {
+  width: 30%;
 }
-.form-top .name {
-  width: 49%;
+.projects {
+  width: 10%;
 }
-.forms-form .subject {
-  width: 100%;
-  margin-top: 20px;
+
+.gallery {
+  width: 30%;
 }
-textarea {
-  width: 100%;
-  margin-top: 20px;
-  height: 150px;
+
+.contact {
+  width: 30%;
 }
-form button {
-  padding: 15px 25px;
-  border: 1px solid white;
-  border-radius: 25px;
-  margin-top: 10px;
+.footerSub h3 {
+  margin-bottom: 20px;
 }
-.forms-contact {
-  padding: 0px 30px;
+.about_school ul {
+  list-style: none;
+}
+.about_school li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.projects ul {
+  list-style: none;
+}
+.copyright {
+  text-align: center;
 }

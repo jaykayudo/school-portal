@@ -8,13 +8,41 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="background"></div>
     <div class="container">
+      <div class="topMain">
+        <div class="topMain_sub">
+          <span class="sub">Have a question?</span>
+          <span class="sub">Call 0093854676</span>
+          <span class="sub">info@mydomain.com</span>
+        </div>
+        <div class="login">
+          <span class="login_login"
+            ><a href="../landing/login/index.html">Portal</a></span
+          >
+          <!-- <span class="login_register">Register</span> -->
+        </div>
+      </div>
+      <div class="topNav">
+        <h3>School</h3>
+        <ul class="scrollbar">
+          <div>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="./about/index.html">About</a></li>
+            <li><a href="./contact/index.html">Contact</a></li>
+          </div>
+        </ul>
+        <a class="enroll" href="#pricing">Enroll Now</a>
+      </div>
       <form>
         <h1>Login</h1>
-        <ul>
-          <li id="admin" class="active"><a href="#">Admin</a></li>
-          <li id="staff"><a href="#">Staff</a></li>
-        </ul>
+        <label for="login_type"></label>
+        <select id="login_type">
+          <option class="option" value="Admin">Admin</option>
+          <option class="option" value="Staff">Staff</option>
+        </select>
         <div class="input">
           <label for="email">Email</label>
           <input type="email" id="email" />
