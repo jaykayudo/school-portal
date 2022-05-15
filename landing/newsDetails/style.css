@@ -3,12 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.nav li {
-  display: inline-block;
-  margin-left: 50px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: light 300;
-}
 .background {
   width: 100vw;
   height: 100vh;
@@ -41,6 +35,10 @@
   margin-right: 10px;
   color: white;
   font-weight: lighter;
+  display: inline-block;
+  margin-left: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: light 300;
 }
 .topMain {
   display: flex;
@@ -77,13 +75,14 @@
 .topNav a {
   text-decoration: none;
 }
+
 .topNav h3 {
   font-size: 28px;
   color: white;
   font-family: sans-serif;
   font-weight: 300;
 }
-.topNav a {
+.enroll {
   display: block;
   border: 1px solid white;
   font-size: 16px;
@@ -94,88 +93,36 @@
   font-family: sans-serif;
 }
 .topNav li a {
-  border: 0px;
-}
-.middle {
-  margin-top: 100px;
-  height: 60vh;
-}
-.middle-h1 {
-  text-align: center;
+  text-decoration: none;
+  border: 0px soild;
+  display: block;
   color: white;
-  font-size: 50px;
+  text-decoration: none;
 }
-.middle-p {
-  margin-top: 20px;
-  text-align: center;
+.carousel {
+  margin-top: 30px;
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newsDetails h1 {
   color: white;
-  font-family: sans-serif;
-  line-height: 30px;
-}
-.middle-explore {
-  text-align: center;
-  color: white;
-  margin-top: 50px;
-}
-.middle-explore a {
-  font-size: 12px;
-  border: 1px solid white;
-  padding: 15px 25px;
-  border-radius: 25px;
-}
-.forms {
+  font-weight: 200;
   padding: 30px;
-  background-color: white;
-  display: flex;
-  padding-top: 70px;
 }
-.forms-form {
-  width: 70%;
-}
-.forms-contact {
-  width: 50%;
-}
-.forms input {
-  padding: 10px 10px;
-  border: 2px solid #242038;
-  border-radius: 8px;
-}
-.form-top {
-  display: flex;
-  justify-content: space-between;
-}
-.form-top .email {
-  width: 49%;
-  right: 0;
-}
-.form-top .name {
-  width: 49%;
-}
-.forms-form .subject {
-  width: 100%;
-  margin-top: 20px;
-}
-textarea {
-  width: 100%;
-  margin-top: 20px;
-  height: 150px;
-  border: 2px solid #242038;
-  border-radius: 8px;
-}
-form button {
-  padding: 15px 25px;
-  border: 1px solid white;
-  border-radius: 25px;
-  margin-top: 10px;
-  background-color: #5c5388;
+.newsDetails p {
   color: white;
-}
-.forms-contact {
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   padding: 0px 30px;
 }
 .footer {
-  background-color: #5c5388;
-  padding: 30px;
+  margin-top: 50px;
+  color: white;
+  background-color: rgba(92, 83, 136, 0.4);
+  padding: 20px;
   font-family: sans-serif;
 }
 .footerSub h3 {
@@ -184,8 +131,8 @@ form button {
 .footer p,
 .projects li {
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
-
 .footerSub {
   width: 100%;
   padding: 30px;
@@ -211,6 +158,10 @@ form button {
 }
 .about_school ul {
   list-style: none;
+}
+.about_school li {
+  display: inline-block;
+  margin-right: 5px;
 }
 .projects ul {
   list-style: none;

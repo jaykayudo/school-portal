@@ -154,6 +154,7 @@ li {
 }
 .offer_what p {
   line-height: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 .offer_what h2 {
   font-size: 30px;
@@ -167,39 +168,48 @@ li {
   grid-gap: 30px;
   line-height: 30px;
 }
+.offers p {
+  font-family: "Open Sans", sans-serif;
+}
 .offer_one p {
   margin-top: 5px;
   line-height: 20px;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 .offer_two p {
   margin-top: 5px;
   line-height: 20px;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 .offer_three p {
   margin-top: 5px;
   line-height: 20px;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 .offer_four p {
   margin-top: 5px;
   line-height: 20px;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 .offer_five p {
   margin-top: 5px;
   line-height: 20px;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 .offer_six p {
   margin-top: 5px;
   line-height: 20px;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 .fa-book,
 .fa-graduation-cap,
